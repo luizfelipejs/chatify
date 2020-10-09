@@ -1,0 +1,25 @@
+{
+   "compilerOptions": {
+      "lib": [
+         "es5",
+         "es6"
+      ],
+      "target": "es5",
+      "module": "commonjs",
+      "esModuleInterop": true,
+      "moduleResolution": "node",
+      "outDir": "./build",
+      "emitDecoratorMetadata": true,
+      "experimentalDecorators": true,
+      "resolveJsonModule": true,
+      "skipLibCheck": true,
+      "baseUrl": ".",
+      "sourceMap": true,
+      "paths": {
+         "@controllers/*": ["./src/controllers/*"],
+         "@entities/*": ["./src/entities/*"],
+         "@repositories/*": ["./src/repositories/*"],   
+         "@services/*": ["./src/services/*"],
+      },
+   }
+}
