@@ -1,0 +1,32 @@
+.home-page {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.contacts-title {
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  width: 430px;
+  padding: 5px;
+  background: #587dff;
+  border-radius: 2px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 42px;
+  color: #ffffff;
+  position: relative;
+  margin-top: 2rem;
+  margin-right: 55rem;
+}
+.contacts {
+  list-style: none;
+  width: 90%;
+  margin-top: 1rem;
+  margin-right: 1rem;
+  display: flex;
+  flex-direction: column;
+}

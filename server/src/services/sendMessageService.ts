@@ -5,14 +5,8 @@ import UserRepository from '@repositories/userRepository'
 import filterItemInArray from 'src/utils/filterItemInArray'
 import { getCustomRepository } from 'typeorm'
 
-interface messageParams {
-  userId: string,
-  channelId: string,
-  content: string
-}
-
 class sendMessageService {
-  static async execute ({ userId, channelId, content }: messageParams): Promise<Message> {
+  static async execute (userId, channelId, content): Promise<Message> {
     const customMessageRepository = getCustomRepository(messageRepository)
     const customUserRepository = getCustomRepository(UserRepository)
     const customChannelRepository = getCustomRepository(ChannelRepository)

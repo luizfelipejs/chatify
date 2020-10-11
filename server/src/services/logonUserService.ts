@@ -20,7 +20,7 @@ class logonUserService {
     } else if (!verificationPassword) {
       throw new Error('Senha invalida')
     } else {
-      return { token: generateToken(user.id) }
+      return generateToken(user.id)
     }
   }
 }

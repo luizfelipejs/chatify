@@ -17,6 +17,7 @@ class ChannelController {
         channel: channelMapped
       })
     } catch (error) {
+      console.log(error)
       return response.status(404).json({
         error: error.message
       })
@@ -34,6 +35,7 @@ class ChannelController {
 
       return response.json({ channel: channelMapped })
     } catch (error) {
+      console.log(error)
       return response.status(404).json({
         error: error.message
       })

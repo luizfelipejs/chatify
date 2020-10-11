@@ -6,6 +6,12 @@ const verifyToken = (request: Request, response: Response, next: NextFunction) =
   try {
     const tokenHeader = request.headers.authorization // token => bearer {token}
 
+    if (!tokenHeader) {
+      return response.status(404).json({
+        message: 'token not provided'
+      })
+    }
+
     const splitToken = tokenHeader.split(' ')
     const [bearer, token] = splitToken
 

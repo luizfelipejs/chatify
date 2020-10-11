@@ -1,0 +1,26 @@
+.search {
+  width: 303px;
+  height: 35px;
+  border: none;
+  position: relative;
+  top: -2.6rem;
+  left: 28rem;
+  border-radius: 2px;
+  background: #6369F3;
+  border-radius: 5px; 
+  font-style: normal; 
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 42px;
+}
+.search-page .input-block {
+  margin-left: 3rem;
+}
+.contacts-search {
+  list-style: none;
+  width: 90%;
+  margin-top: 1rem;
+  margin-left: 3rem;
+  display: flex;
+  flex-direction: column;
+}

@@ -10,7 +10,7 @@ class AuthController {
 
       const logonUserServiceToken = await logonUserService.execute({ email, password })
 
-      return response.json({ logonUserServiceToken })
+      return response.json({ token: logonUserServiceToken })
     } catch (error) {
       return response.status(404).json({ error: error.message })
     }

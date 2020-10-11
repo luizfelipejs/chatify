@@ -1,0 +1,55 @@
+.contact-info {
+  position: fixed;
+  top: 1rem;
+  left: 80%;
+  opacity: 1;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  width: 260px;
+  height: 50px;
+  background: #6369F3;
+  border-radius: 8px 8px 8px 8px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  padding-left: 0.3rem;
+  line-height: 28px;
+
+}
+
+.messages-list {
+  list-style: none;
+}
+.messages-list  li.me {
+  margin: 1rem;
+  height: 3rem;
+  padding: 10px;
+  background: #6361B7;
+  border-radius: 0px 5px 5px 5px;
+}
+
+.messages-list  li.other {
+  margin: 1rem;
+  height: 3rem;
+  text-align: right;
+  padding: 10px;
+  background: #6361B7;
+  border-radius: 5px 0px 5px 5px;
+}
+.input-message {
+  width: calc(100% - 2rem);
+  height: 47px;
+  border: 0;
+  top: 90%;
+  left: 1rem;
+  position: fixed;
+  background: #2D2A37;
+  border-radius: 5px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+  color: #FFFFFF;
+}

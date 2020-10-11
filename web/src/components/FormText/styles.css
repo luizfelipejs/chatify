@@ -1,0 +1,22 @@
+.form-text {
+  text-align: center;
+}
+.form-text h1 {
+  margin-bottom: 1rem;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 56px;
+  color: #FFFFFF;
+}
+.form-text p {
+  width: 190px;
+  height: 28px;
+  left: 625px;
+  top: 309px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 28px;
+  color: #FFFFFF;
+}

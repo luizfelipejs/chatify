@@ -2,22 +2,21 @@ import { Request, Response } from 'express'
 import createUserService from '@services/createUserService'
 import { UserMap } from '../dtos/userDto'
 import findUserService from '@services/findUserService'
+import getIdFromToken from 'src/token/getToken'
 
 class UserController {
   async create (request: Request, response: Response) {
     try {
       const { username, urlImage, email, password } = request.body
 
-      const userCreated = await createUserService.execute({
+      await createUserService.execute({
         username: username,
         email: email,
         urlImage: urlImage,
         password: password
       })
 
-      const userMapped = UserMap(userCreated)
-
-      return response.json({ userMapped })
+      return response.json({ message: 'user Created' })
     } catch (error) {
       return response.status(404).json({ error: error.message })
     }
@@ -25,14 +24,29 @@ class UserController {
 
   async find (request: Request, response: Response) {
     try {
-      const username = request.params.id
+      const id = request.params.id
 
-      const user = await findUserService.execute(username)
+      const user = await findUserService.execute(id)
 
       const userMapped = UserMap(user)
 
       return response.json({ user: userMapped })
     } catch (error) {
+      return response.status(404).json({ error: error.message })
+    }
+  }
+
+  async findCurrent (request: Request, response: Response) {
+    try {
+      const idCurrentUser = getIdFromToken(request)
+
+      const user = await findUserService.execute(idCurrentUser)
+
+      const userMapped = UserMap(user)
+
+      return response.json({ user: userMapped })
+    } catch (error) {
+      console.log(error)
       return response.status(404).json({ error: error.message })
     }
   }

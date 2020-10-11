@@ -1,0 +1,12 @@
+.Form {
+  position: relative;
+  background: #2D2A37;
+  border-radius: 2px; 
+  width: 426px;
+  padding: 1rem;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

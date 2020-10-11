@@ -1,0 +1,30 @@
+
+.contact {
+  width: calc(100% + 1rem);
+  height: 151px;
+  background: #2D2A37;
+  border-radius: 2px;
+  padding: 1rem
+}
+.contact h1, h2 {
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+.contact a {
+  width: 246px;
+  height: 55px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  background: #587DFF;
+  border-radius: 2px;
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 19px;
+  line-height: 28px;
+  position: relative;
+  float: right;
+  top: -5.5rem;
+}

@@ -1,0 +1,23 @@
+.logon-page {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.logon-page .Form {
+  margin-top: 10%;
+}
+.logon-page .submit {
+  margin-top: 1rem;
+  width: 358px;
+  height: 40px;
+  background: #587DFF;
+  border-radius: 2px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  border: 0;
+  line-height: 28px;
+  color: #FFFAFA;
+}

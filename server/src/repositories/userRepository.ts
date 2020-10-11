@@ -30,8 +30,8 @@ class UserRepository extends Repository<User> {
     return usersResolved
   }
 
-  async findUserByUsername (username): Promise<User> {
-    const user = await this.findOne({ username: username }, { relations: ['channels', 'channels.users'] })
+  async findUserByID (id: string): Promise<User> {
+    const user = await this.findOne({ id: id }, { relations: ['channels', 'channels.users'] })
     return user
   }
 }

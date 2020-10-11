@@ -1,0 +1,60 @@
+.header-page {
+  width: 100%;
+  height: 102px;
+  background: #2d2a37;
+}
+.header-page .navigation-header ul {
+  list-style: none;
+  margin-top: -1rem;
+}
+.header-page .navigation-header ul li {
+  display: inline-flex;
+  margin: 1rem;
+}
+.header-page .navigation-header ul li h2 {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 42px;
+}
+.header-page .navigation-header ul li hr {
+  width: 3px;
+  height: 50px;
+  border: 0;
+  background: #c4c4c4;
+  position: relative;
+  top: 1rem;
+}
+.header-page .navigation-header {
+  position: relative;
+  margin-left: 1rem;
+}
+.header-page .navigation-header ul li a {
+  text-decoration: none;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 42px;
+
+  color: #9f9ada;
+}
+.header-page .navigation-header ul li button {
+  width: 107px;
+  height: 32px;
+  border: 0;
+  background: #587DFF;
+  border-radius: 3px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  line-height: 42px;
+}
+
+.header-page .navigation-header ul li button:focus {
+  outline: 0;
+}

@@ -20,7 +20,7 @@ export class User {
     @Column({ unique: true })
     password: string
 
-    @ManyToMany(type => Channel, channel => channel.Users)
+    @ManyToMany(type => Channel, channel => channel.users)
     channels: Channel[]
 
     @OneToMany(type => Message, message => message.sender)

@@ -1,0 +1,21 @@
+.input-block input {
+  display: block;
+  width: 358px;
+  padding: 10px;
+  height: 35px;
+  margin-bottom: 0.5rem;
+  background: #46465C;
+  border: 1px solid #2E2742;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.input-block label {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 21px;
+}
+.input-block input:focus {
+  outline: 0;
+}
