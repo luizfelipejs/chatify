@@ -34,16 +34,20 @@ const HomePage: React.FC = () => {
     }
 
     currentUser()
-  })
+  }, [])
   
   const filterUserDiferentInChannel = (channel: channel) => {
     const user = channel.users.filter((userChannel) => userChannel.id !== userCurrent.id)
     return user[0];
   }
 
-  const renderChannel = (channel: channel) => {
+  const renderChannel = (channel: channel, index: number) => {
     const diferentUserInfo = filterUserDiferentInChannel(channel)
-    return <Contact name={diferentUserInfo.username} createdAt={channel.createdAt} id={channel.id}/>
+    return <Contact  
+    createdAt={channel.createdAt}
+      key={index} 
+      name={diferentUserInfo.username} 
+      id={channel.id}/>
   }
 
   return (

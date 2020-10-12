@@ -12,7 +12,7 @@ const SearchPage: React.FC = () => {
       <Input name="Digite o contato que você quer procurar" label="search"/>
       <button className="search">Procurar</button>
       <ul className="contacts-search">
-        <Contact name="test" createdAt="asd" id="asdasd"/>
+        <Contact name="test" createdAt="asdas" id="asdasd"/>
       </ul>
     </div>
   )

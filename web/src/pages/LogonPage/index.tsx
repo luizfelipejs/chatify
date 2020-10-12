@@ -19,8 +19,8 @@ const LogonPage: React.FC = () => {
       const response = await api.post('/auth/logon', { email, password })
       const { data } = response
 
-      Login(data.token)
       history.push('/home')
+      Login(data.token)
     } catch (err) {
       alert('algum erro ocorreu')
       console.warn(err.message);

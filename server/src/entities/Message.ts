@@ -11,10 +11,10 @@ export class Message {
   @Column()
   content: string
 
-  @ManyToOne(type => User, user => user.Messages)
+  @ManyToOne(type => User, user => user.messages)
   sender: User
 
-  @ManyToOne(type => Channel, channel => channel.Messages)
+  @ManyToOne(type => Channel, channel => channel.messages)
   channel: Channel
 
   @Column()

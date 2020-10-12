@@ -14,9 +14,9 @@ const Contact: React.FC<Contact> = ({ id, name, createdAt }) => {
     <li>
       <div className="contact">
         <h1>Nome: {name}</h1>
-        <h2>Sala criada em: {createdAt}</h2>
+        <h2>Criado em: {createdAt}</h2>
         <Link to={`/chat/${id}`}>
-          Acessar Sala
+          Acessar 
         </Link>
       </div>
     </li>

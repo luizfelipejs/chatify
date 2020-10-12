@@ -22,22 +22,6 @@
 .messages-list {
   list-style: none;
 }
-.messages-list  li.me {
-  margin: 1rem;
-  height: 3rem;
-  padding: 10px;
-  background: #6361B7;
-  border-radius: 0px 5px 5px 5px;
-}
-
-.messages-list  li.other {
-  margin: 1rem;
-  height: 3rem;
-  text-align: right;
-  padding: 10px;
-  background: #6361B7;
-  border-radius: 5px 0px 5px 5px;
-}
 .input-message {
   width: calc(100% - 2rem);
   height: 47px;
