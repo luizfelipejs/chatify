@@ -17,8 +17,6 @@ interface User {
   id: string;
   urlImage: string;
   username: string;
-  email: string;
-  password: string;
 }
 
 const ChatPage: React.FC = () => {

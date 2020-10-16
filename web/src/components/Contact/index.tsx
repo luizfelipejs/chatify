@@ -1,17 +1,28 @@
 import React from 'react';
 
 import './styles.css';
-import { Link } from 'react-router-dom';
+import { Link, useHistory } from 'react-router-dom';
+import api from '../../services/api';
 
 interface Contact {
   id: string
   name: string
   createdAt: string
+  create?: boolean
 }
 
-const Contact: React.FC<Contact> = ({ id, name, createdAt }) => {
+const Contact: React.FC<Contact> = ({ id, name, createdAt, create }) => {
+  const history = useHistory()
+  const handleCreate = async (event: any) => {
+    if (create != undefined) {
+      await api.post('/channel', { id })
+      history.push('/home')
+    }
+  }
+
+
   return (
-    <li>
+    <li onClick={handleCreate}>
       <div className="contact">
         <h1>Nome: {name}</h1>
         <h2>Criado em: {createdAt}</h2>
